@@ -1,0 +1,76 @@
+@media print { 		
+	ul {	 
+		list-style-type: disc !important;
+	}
+	ol {
+		list-style-type: decimal !important;	
+	}
+	img{ 
+		display: none; 
+	} 
+	header *{
+		display: none; 
+	}
+        *{
+		background:#fff !important;
+		color:#000 !important;
+		width:auto !important;
+		margin: 0px !important;
+		padding: 0px !important;
+		height:auto !important;
+	}
+}  		
+@font-face{
+	font-family:helvetica;
+	src: url(helvetica.ttf);
+}
+@font-face{
+	font-family:helveticab;
+	src: url(helveticab.ttf);
+}
+body{
+	background:black;
+	font-family:helvetica;
+}
+.dws-menu ul li{
+	position: relative;
+	z-index: 5;
+}
+.dws-menu ul li ul li ul li a{
+	display: block;
+	box-sizing: border-box;	
+	color:#fff;
+	text-decoration: none;
+	padding: 10px;
+	text-transform: none;
+}
+.dws-menu li a:hover{
+	background: #ccc; 
+	color: #111;
+}
+.dws-menu li ul li ul{	
+	position: absolute;
+	min-width: 150px;
+	list-style: none;
+	display: none;
+	right: -110px;
+	top: 0;
+}
+.dws-menu ul li ul li:hover > ul{
+	display: block;
+}
+.mid {
+	background-color:white;
+	padding:3%;
+}
+
+   .photo:hover::after {
+    content: attr(data-title); 
+    position: absolute; 
+    left: 0; right: 0; bottom: 5px; 
+    z-index: 1; 
+    background: rgba(0,42,167,0.6); 
+    color: #fff;
+    text-align: center; 
+    font-size: 11px; 
+   }

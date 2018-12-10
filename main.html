@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Moigh</title>
+	<link rel="shortcut icon" href="icon.png">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="mystyle.css" rel="stylesheet">
+ 
+  </head>
+  <body>
+	<div class="container">
+		<div class="navbar-wrapper">
+			<div class="navbar navbar-inverse navbar-static-top" role="navigation">
+				<div class="navbar-header">
+				  <a class="navbar-brand" href="#">moigh</a>
+				</div>		 
+			</div>
+		</div>
+		<div class="col-md-8 mid col-md-push-2">
+			<form>
+			  <div class="form-group has-success has-feedback">
+				  <label for="inputEmail">Email</label>
+				  <input type="text" class="form-control" id="inputEmail"  placeholder="Email">
+				  <span class="glyphicon glyphicon-ok form-control-feedback" ></span>
+			  </div>
+			  <div class="form-group  has-error has-feedback">
+				<label for="InputPassword1">Password</label>				
+				<input type="password" class="form-control" id="InputPassword1" placeholder="Password">
+				<span class="glyphicon glyphicon-remove form-control-feedback" ></span>
+			  </div>
+			</form>
+			<a class="btn btn-success" data-toggle="modal" data-target="#myModal">Send</a>
+			<div class="modal fade" id="myModal">
+			  <div class="modal-dialog" role="document">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					</button>
+					<h4 class="modal-title">Поздравляю</h4>
+				  </div>
+				  <div class="modal-body">
+					<p>Ваши данные отправлены в ФСБ</p>
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+				    <a class="btn btn-primary" href="First.html">OK</a>
+				  </div>
+				</div> 
+			  </div>  
+			</div>
+		</div>
+	</div>
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
